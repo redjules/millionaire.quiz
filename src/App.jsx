@@ -77,6 +77,50 @@ function App() {
         },
       ],
     },
+    {
+      id: 4,
+      question: "What is the capital of France?",
+      answers: [
+        {
+          text: "Paris",
+          correct: true,
+        },
+        {
+          text: "Madrid",
+          correct: true,
+        },
+        {
+          text: "Dublin",
+          correct: false,
+        },
+        {
+          text: "London",
+          correct: false,
+        },
+      ],
+    },
+    {
+      id: 5,
+      question: "Who wrote "El Quijote"?",
+      answers: [
+        {
+          text: "Leonardo Da Vinci",
+          correct: false,
+        },
+        {
+          text: "Luis de Góngora",
+          correct: false,
+        },
+        {
+          text: "Arturo Pérez-Reverte",
+          correct: false,
+        },
+        {
+          text: "Miguel de Cervantes",
+          correct: true,
+        },
+      ],
+    },
   ];
 
   const moneyPyramid = useMemo(
