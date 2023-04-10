@@ -72,7 +72,7 @@ function App() {
           correct: false,
         },
         {
-          text: "Daniel Red Cliff",
+          text: "Daniel Radliffe",
           correct: true,
         },
       ],
