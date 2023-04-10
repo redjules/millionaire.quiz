@@ -123,7 +123,7 @@ function App() {
     },
     {
       id: 6,
-      question: "According to legend, what is at the end of a rainbow?",
+      question: "According to the legend, what is at the end of a rainbow?",
       answers: [
         {
           text: "Jesus",
