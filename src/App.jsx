@@ -101,7 +101,7 @@ function App() {
     },
     {
       id: 5,
-      question: "Who wrote "El Quijote"?",
+      question: "Who wrote `El Quijote?",
       answers: [
         {
           text: "Leonardo Da Vinci",
