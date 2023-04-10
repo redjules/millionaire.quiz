@@ -57,7 +57,7 @@ function App() {
     },
     {
       id: 3,
-      question: "Who played the character of harry potter in movie?",
+      question: "Who played the character of Harry Potter in movie?",
       answers: [
         {
           text: "Johnny Deep",
