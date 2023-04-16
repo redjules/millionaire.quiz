@@ -7,7 +7,7 @@ export default function Timer({ setTimeOut, questionNumber }) {
     if (timer === 0) return setTimeOut(true);
     const interval = setInterval(() => {
       setTimer((prev) => prev - 1);
-    }, 1000);
+    }, 500);
     return () => clearInterval(interval);
   }, [timer, setTimeOut]);
 
