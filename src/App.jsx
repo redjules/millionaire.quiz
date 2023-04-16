@@ -10,7 +10,7 @@ function App() {
   const [timeOut, setTimeOut] = useState(false);
   const [questionNumber, setQuestionNumber] = useState(1);
   const [earned, setEarned] = useState("$ 0");
-
+  const [wonGame, setWonGame] = useState(false);
 
   const moneyPyramid = useMemo(
     () =>
@@ -39,6 +39,10 @@ function App() {
       setEarned(moneyPyramid.find((m) => m.id === questionNumber - 1).amount);
   }, [questionNumber, moneyPyramid]);
 
+  useEffect(() => {
+    if (questionNumber >= 15) setWonGame(true);
+  }, [questionNumber]);
+
   return (
     <div className="app">
       {!username ? (
@@ -50,25 +54,34 @@ function App() {
               <h1 className="endText">You earned: {earned}</h1>
             ) : (
               <>
-                <div className="top">
-                  <div className="timer">
-                    <Timer
-                      setTimeOut={setTimeOut}
-                      questionNumber={questionNumber}
-                    />
-                  </div>
-                </div>
-                <div className="bottom">
-                  <Trivia
-                    data={data}
-                    questionNumber={questionNumber}
-                    setQuestionNumber={setQuestionNumber}
-                    setTimeOut={setTimeOut}
-                  />
-                </div>
+                {!wonGame ? (
+                  <>
+                    <div className="top">
+                      <div className="timer">
+                        <Timer
+                          setTimeOut={setTimeOut}
+                          questionNumber={questionNumber}
+                        />
+                      </div>
+                    </div>
+                    <div className="bottom">
+                      <Trivia
+                        data={data}
+                        questionNumber={questionNumber}
+                        setQuestionNumber={setQuestionNumber}
+                        setTimeOut={setTimeOut}
+                      />
+                    </div>
+                  </>
+                ) : (
+                  <h1 className="endText">
+                    Congratulations, you won! You earned: $1.000.000
+                  </h1>
+                )}
               </>
             )}
           </div>
+
           <div className="pyramid">
             <ul className="moneyList">
               {moneyPyramid.map((m) => (
