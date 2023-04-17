@@ -78,7 +78,7 @@ function App() {
                   <>
                     <Confetti width={3000} height={2000} />
                     <h1 className="endText">
-                      Congratulations, you won! You earned: $1.000.000
+                      Congratulations, you won! You earned: $1.000.000!!
                     </h1>
                   </>
                 )}
