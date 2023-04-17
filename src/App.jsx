@@ -4,6 +4,7 @@ import Start from "./components/Start";
 import Timer from "./components/Timer";
 import Trivia from "./components/Trivia";
 import { data } from "./data.jsx";
+import Confetti from "react-confetti";
 
 function App() {
   const [username, setUsername] = useState(null);
@@ -74,9 +75,12 @@ function App() {
                     </div>
                   </>
                 ) : (
-                  <h1 className="endText">
-                    Congratulations, you won! You earned: $1.000.000
-                  </h1>
+                  <>
+                    <Confetti width={3000} height={2000} />
+                    <h1 className="endText">
+                      Congratulations, you won! You earned: $1.000.000
+                    </h1>
+                  </>
                 )}
               </>
             )}
