@@ -117,7 +117,7 @@
 }
 
 .answer.correct {
-  animation: correct 3s ease forwards;
+  animation: correct 1s ease forwards;
 }
 
 @keyframes correct {
@@ -138,7 +138,7 @@
 }
 
 .answer.wrong {
-  animation: wrong 3s ease forwards;
+  animation: wrong 1s ease forwards;
 }
 
 @keyframes wrong {
