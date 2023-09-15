@@ -1,3 +1,11 @@
+# Millionaire Quiz
+# Project description
+In this project, I recreate the mythical Millionaire Quiz game in React.
+
+# Snapshot
+
+<img width="725" alt="Screenshot 2023-09-15 at 11 05 29" src="https://github.com/redjules/millionaire.quiz/assets/106017493/7c10def5-71fe-4049-9c81-2f82a31515d1">
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
